@@ -1,0 +1,81 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Consulta" >
+    
+  <RadioGroup
+        android:id="@+id/rgTipo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+       
+     <RadioButton
+        android:id="@+id/rBEquipe"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:text="Equipe"
+        android:textStyle="bold" />
+
+     <RadioButton
+         android:id="@+id/rBIndividual"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginLeft="30dp"
+         android:text="Individual"
+         android:textStyle="bold" />
+        
+    </RadioGroup>
+
+    <Button
+ android:id="@+id/btContinuar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:text="Continuar" />
+
+    <RadioGroup
+        android:id="@+id/rgTipoIndividual"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/rgTipo"
+        android:orientation="vertical" >
+
+        <RadioButton
+            android:id="@+id/rBFuncionario"
+            android:layout_width="218dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="20dp"
+            android:text="Colaborador"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/rBEquipamento"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:text="Equipamento"
+            android:textStyle="bold" />
+    </RadioGroup>
+
+    <AutoCompleteTextView
+        android:id="@+id/autoCompDados"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/rgTipoIndividual"
+        android:layout_marginTop="11dp"
+        android:completionHint="Equipe/Individual"
+        android:ems="10"
+        android:inputType="textAutoComplete"
+        android:text="Equipe/Individual" />
+
+</RelativeLayout>

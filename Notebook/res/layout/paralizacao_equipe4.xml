@@ -1,0 +1,49 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ParalizacaoEquipe4" >
+    
+      <Button
+        android:id="@+id/btSalvar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:text="Salvar" />
+
+      <TextView
+          android:id="@+id/textView1"
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:layout_alignParentLeft="true"
+          android:layout_alignParentTop="true"
+          android:gravity="center_horizontal"
+          android:text="Justificativa"
+          android:textAppearance="?android:attr/textAppearanceLarge" />
+
+      <EditText
+          android:id="@+id/eJustificativa"
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:layout_alignParentLeft="true"
+          android:layout_below="@+id/textView1"
+          android:layout_marginTop="17dp"
+          android:ems="10"
+          android:inputType="textMultiLine" >
+
+          <requestFocus />
+      </EditText>
+
+      <Spinner
+          android:id="@+id/spManutencao"
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:layout_alignParentLeft="true"
+          android:layout_below="@+id/eJustificativa"
+          android:layout_marginTop="55dp" />
+    
+</RelativeLayout>

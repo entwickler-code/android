@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="br.notebook.android"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="10"
+        android:targetSdkVersion="14" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="br.notebook.android.Splash"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="br.notebook.android.MenuPrincipal"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme" >
+            <intent-filter>
+                <action android:name="MenuPrincipal" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="br.notebook.android.menus.PegarArquivo"
+            android:exported="true"
+            android:label="@string/title_activity_pegar_arquivo"
+            android:theme="@style/AppTheme" >
+            <intent-filter>
+                <action android:name="PegarArquivo" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="br.notebook.android.menus.PrepararArquivo"
+            android:exported="true"
+            android:label="@string/title_activity_preparar_arquivo"
+            android:theme="@style/AppTheme"
+            tools:ignore="Instantiatable">
+            <intent-filter>
+                <action android:name="PrepararArquivo" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="br.notebook.android.menus.Apontamentos"
+            android:exported="true"
+            android:label="@string/title_activity_apontamentos"
+            android:theme="@style/AppTheme" >
+            <intent-filter>
+                <action android:name="Apontamentos" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="br.notebook.android.menus.SDCard"
+            android:label="@string/title_activity_sdcard"
+            android:theme="@style/AppTheme" >
+            <intent-filter>
+                <action android:name="SDCard" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="br.notebook.android.menus.TipoApontamento"
+            android:label="@string/title_activity_tipo_apontamento"
+            android:theme="@style/AppTheme" >
+            <intent-filter>
+                <action android:name="TipoApontamento" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="br.notebook.android.telas.ParalizacaoIndividual"
+            android:label="@string/title_activity_paralizacao_individual"
+            android:theme="@style/AppTheme" >
+            <intent-filter>
+                <action android:name="ParalizacaoIndividual" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="br.notebook.android.telas.ParalizacaoIndividual2"
+            android:label="@string/title_activity_paralizacao_individual"
+            android:theme="@style/AppTheme" >
+            <intent-filter>
+                <action android:name="ParalizacaoIndividual2" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="br.notebook.android.telas.ParalizacaoIndividual4"
+            android:label="@string/title_activity_paralizacao_individual"
+            android:theme="@style/AppTheme" >
+            <intent-filter>
+                <action android:name="ParalizacaoIndividual4" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="br.notebook.android.telas.ApropriacaoIndividual"
+            android:label="@string/title_activity_apropriacao_individual"
+            android:theme="@style/AppTheme" >
+            <intent-filter>
+                <action android:name="ApropriacaoIndividual" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="br.notebook.android.telas.ApropriacaoIndividual2"
+            android:label="@string/title_activity_apropriacao_individual"
+            android:theme="@style/AppTheme" >
+            <intent-filter>
+                <action android:name="ApropriacaoIndividual2" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="br.notebook.android.telas.CadastroApropriacao"
+            android:label="@string/title_activity_cadastro_apropriacao"
+            android:theme="@style/AppTheme" >
+            <intent-filter>
+                <action android:name="CadastroApropriacao" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="br.notebook.android.telas.ConsultaApropriacao"
+            android:label="@string/title_activity_consulta_apropriacao"
+            android:theme="@style/AppTheme" >
+            <intent-filter>
+                <action android:name="ConsultaApropriacao" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="br.notebook.android.telas.CadastroParalizacao"
+            android:label="@string/title_activity_cadastro_paralizacao"
+            android:theme="@style/AppTheme" >
+            <intent-filter>
+                <action android:name="CadastroParalizacao" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="br.notebook.android.telas.ConsultaParalizacao"
+            android:label="@string/title_activity_consulta_paralizacao"
+            android:theme="@style/AppTheme" >
+            <intent-filter>
+                <action android:name="ConsultaParalizacao" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="br.notebook.android.telas.ParalizacaoEquipe"
+            android:label="@string/title_activity_paralizacao_equipe"
+            android:theme="@style/AppTheme" >
+            <intent-filter>
+                <action android:name="ParalizacaoEquipe" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="br.notebook.android.telas.ParalizacaoEquipe2"
+            android:label="@string/title_activity_paralizacao_equipe"
+            android:theme="@style/AppTheme" >
+            <intent-filter>
+                <action android:name="ParalizacaoEquipe2" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="br.notebook.android.telas.CadastroParalizacaoEquipe"
+            android:label="@string/title_activity_cadastro_paralizacao_equipe"
+            android:theme="@style/AppTheme" >
+            <intent-filter>
+                <action android:name="CadastroParalizacaoEquipe" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="br.notebook.android.telas.ConsultaParalizacaoEquipe"
+            android:label="@string/title_activity_consulta_paralizacao_equipe"
+            android:theme="@style/AppTheme" >
+            <intent-filter>
+                <action android:name="ConsultaParalizacaoEquipe" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="br.notebook.android.telas.ApropriacaoEquipe"
+            android:label="@string/title_activity_apropriacao_equipe"
+            android:theme="@style/AppTheme" >
+            <intent-filter>
+                <action android:name="ApropriacaoEquipe" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="br.notebook.android.telas.ApropriacaoEquipe2"
+            android:label="@string/title_activity_apropriacao_equipe"
+            android:theme="@style/AppTheme" >
+            <intent-filter>
+                <action android:name="ApropriacaoEquipe2" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="br.notebook.android.telas.ApropriacaoEquipe3"
+            android:label="@string/title_activity_apropriacao_equipe"
+            android:theme="@style/AppTheme" >
+            <intent-filter>
+                <action android:name="ApropriacaoEquipe3" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="br.notebook.android.telas.ParalizacaoEquipe4"
+            android:label="@string/title_activity_paralizacao_equipe4"
+            android:theme="@style/AppTheme" >
+            <intent-filter>
+                <action android:name="ParalizacaoEquipe4" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="br.notebook.android.telas.Consulta"
+            android:label="@string/title_activity_consulta"
+            android:theme="@style/AppTheme" >
+            <intent-filter>
+                <action android:name="Consulta" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="br.notebook.android.telas.CadastroApropriacaoEquipe"
+            android:label="@string/title_activity_cadastro_apropriacao_equipe"
+            android:theme="@style/AppTheme" >
+            <intent-filter>
+                <action android:name="CadastroApropriacaoEquipe" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="br.notebook.android.telas.NovaConsulta"
+            android:label="@string/title_activity_nova_consulta"
+            android:theme="@style/AppTheme" >
+            <intent-filter>
+                <action android:name="NovaConsulta" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="br.notebook.android.telas.VisualizacaoConsulta"
+            android:label="@string/title_activity_visualizacao_consulta"
+             android:theme="@style/AppTheme" >
+            <intent-filter>
+                <action android:name="VisualizacaoConsulta" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

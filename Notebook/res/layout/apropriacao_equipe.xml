@@ -1,0 +1,85 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ApropriacaoEquipe" >
+
+    <Spinner
+        android:id="@+id/spEquipes"
+        android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:layout_alignParentLeft="true"
+          android:layout_alignParentTop="true" 
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="38dp" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center_horizontal"
+        android:text="Equipes"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    
+    <Button
+        android:id="@+id/btContinuar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:text="Continuar" />
+
+    <EditText
+        android:id="@+id/eProdutividade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/spEquipes"
+        android:layout_marginTop="33dp"
+        android:ems="10"
+        android:hint="Produtividade"
+        android:inputType="number"
+        android:maxLength="5"
+        android:orientation="horizontal" >
+        
+    	<requestFocus />
+    </EditText>
+
+    <AbsoluteLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btContinuar"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/eProdutividade"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/eDestino"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="45dp"
+            android:layout_x="162dp"
+            android:layout_y="10dp"
+            android:ems="10"
+            android:hint="Destino" />
+
+        
+
+        <EditText
+            android:id="@+id/eOrigem"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_x="0dp"
+            android:layout_y="10dp"
+            android:ems="10"
+            android:hint="Origem" />
+
+    </AbsoluteLayout>
+    
+</RelativeLayout>

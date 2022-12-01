@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Notebook</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_menu">Menu</string>
+    <string name="title_activity_menu_principal">MenuPrincipal</string>
+    <string name="escolha_opcoes">Escolha uma das opções</string>
+    <string name="title_activity_arquivos">Arquivos</string>
+    <string name="title_activity_pegar_arquivo">Pegar Arquivo</string>
+    <string name="title_activity_preparar_arquivo">Preparar Arquivo</string>
+    <string name="title_activity_apontamentos">Tipo de Apontamento</string>
+    <string name="title_activity_sdcard">SDCard</string>
+    <string name="title_activity_tipo_apontamento">Apontamento por</string>
+    <string name="title_activity_apropriacao_individual">Apropriação Individual</string>
+    <string name="title_activity_paralizacao_individual">Paralisação Individual</string>
+    <string name="title_activity_cadastro_apropriacao">Cadastro Apropriação</string>
+    <string name="title_activity_consulta_apropriacao">Consulta Apropriação</string>
+    <string name="title_activity_cadastro_paralizacao">Cadastro Paralisaçao</string>
+    <string name="title_activity_consulta_paralizacao">Consulta Paralisação</string>
+    <string name="title_activity_paralizacao_equipe">Paralisação Equipe</string>
+    <string name="title_activity_cadastro_paralizacao_equipe">Cadastro Equipe</string>
+    <string name="title_activity_consulta_paralizacao_equipe">Consulta Equipe</string>
+    <string name="title_activity_apropriacao_equipe">Apropriação Equipe</string>
+    <string name="title_activity_paralizacao_equipe4">Paralisação Equipe</string>
+    <string name="title_activity_consulta">Consulta</string>
+    <string name="title_activity_cadastro_apropriacao_equipe">Cadastro Apropriação</string>
+    <string name="title_activity_nova_consulta">Consulta Apropriações</string>
+    <string name="title_activity_visualizacao_consulta">Visualização Consulta</string>
+
+</resources>

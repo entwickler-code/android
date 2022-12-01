@@ -1,0 +1,76 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ApropriacaoIndividual" >
+
+    <RadioGroup
+        android:id="@+id/rgTipo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RadioButton
+            android:id="@+id/rBFuncionario"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:text="Colaborador"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/rBEquipamento"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:text="Equipamento"
+            android:textStyle="bold" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btContinuar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:text="Continuar" />
+
+    <AutoCompleteTextView
+        android:id="@+id/autoCompDados"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/rgTipo"
+        android:layout_marginTop="59dp"
+        android:completionHint="Matrícula/Prefixo"
+        android:ems="10"
+        android:inputType="textAutoComplete"
+        android:text="Matrícula/Prefixo" >
+
+        <requestFocus />
+    </AutoCompleteTextView>
+
+    <EditText
+        android:id="@+id/horoInicial"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:ems="10"
+        android:hint="Horímetro Inicial" />
+
+    <EditText
+        android:id="@+id/horoFinal"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/horoInicial"
+        android:layout_alignBottom="@+id/horoInicial"
+        android:layout_alignParentRight="true"
+        android:ems="10"
+        android:hint="Horímetro Final" />
+
+</RelativeLayout>

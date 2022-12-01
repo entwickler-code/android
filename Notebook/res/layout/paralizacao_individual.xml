@@ -1,0 +1,57 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ParalizacaoIndividual" >
+    
+   <RadioGroup
+        android:id="@+id/rgTipo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+       
+     <RadioButton
+        android:id="@+id/rBFuncionario"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:text="Colaborador"
+        android:textStyle="bold" />
+
+     <RadioButton
+         android:id="@+id/rBEquipamento"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginLeft="30dp"
+         android:text="Equipamento"
+         android:textStyle="bold" />
+        
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btCont"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:text="Continuar" />
+
+     <AutoCompleteTextView
+        android:id="@+id/autoDados"
+        android:completionHint="Matrícula/Prefixo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/rgTipo"
+        android:layout_marginTop="59dp"
+        android:ems="10"
+        android:text="Matrícula/Prefixo" >
+
+        <requestFocus />
+    </AutoCompleteTextView>
+    
+</RelativeLayout>
